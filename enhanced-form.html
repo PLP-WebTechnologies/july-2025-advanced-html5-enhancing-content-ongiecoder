@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML5 Assignment - Enhanced Content & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Thee Journey</h1>
+    <p>Empowering communities through creativity, wellness, and innovation.</p>
+  </header>
+
+  <main>
+
+    <!-- Section 1: List -->
+    <section>
+      <h2>Our Core Focus Areas</h2>
+      <ul>
+        <li>Youth Empowerment</li>
+        <li>Mental Wellness</li>
+        <li>Creative Storytelling</li>
+        <li>Rural Education Support</li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>Upcoming Community Events</h2>
+      <table border="1" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Youth Motivation Camp</td>
+            <td>10 Sept 2025</td>
+            <td>Eastern Cape</td>
+          </tr>
+          <tr>
+            <td>Wellness Walk</td>
+            <td>15 Oct 2025</td>
+            <td>Johannesburg</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>Watch Our Impact in Action</h2>
+      <video width="320" controls>
+        <source src="images week2/282995_small.mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Our Theme Song</h3>
+      <audio controls>
+        <source src="images week2/alone-296348 (1).mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+
+      <h3>Featured Image</h3>
+      <img src="images week2/istockphoto-937212904-1024x1024.jpg" alt="Young leaders at a workshop" width="300" />
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+      <h2>Join Our Movement</h2>
+      <form action="submit.html" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" required placeholder="Your full name" /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required placeholder="you@example.com" /><br /><br />
+
+          <label for="age">Age:</label><br />
+          <input type="number" id="age" name="age" min="10" max="100" required /><br /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0712345678" required /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Participation Details</legend>
+
+          <label for="event">Choose an Event:</label><br />
+          <select id="event" name="event" required>
+            <option value="">--Select--</option>
+            <option value="camp">Youth Motivation Camp</option>
+            <option value="walk">Wellness Walk</option>
+          </select><br /><br />
+
+          <label>How did you hear about us?</label><br />
+          <input type="radio" id="social" name="source" value="social" required />
+          <label for="social">Social Media</label><br />
+
+          <input type="radio" id="friend" name="source" value="friend" />
+          <label for="friend">Friend/Family</label><br />
+
+          <input type="radio" id="other" name="source" value="other" />
+          <label for="other">Other</label><br /><br />
+
+          <label for="message">Tell us why you want to join:</label><br />
+          <textarea id="message" name="message" rows="4" cols="40" minlength="20" required placeholder="Write at least 20 characters..."></textarea><br /><br />
+        </fieldset>
+
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe" checked readonly />
+          Subscribe to our newsletter (always on)
+        </label><br /><br />
+
+        <input type="submit" value="Submit Application" />
+        <input type="reset" value="Clear Form" />
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thee Journey (Pty) Ltd | Designed by Ongeziwe “Ongie” Gusha</p>
+    <p>📧 ongeziwegusha2016@gmail.com | 🌐 www.isibanisethemba.co.za</p>
+    <p>📱 TikTok | Instagram | Facebook: @isibanisethemba</p>
+  </footer>
+
+</body>
+</html>
